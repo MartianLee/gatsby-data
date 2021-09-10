@@ -1,8 +1,8 @@
-import { graphql, Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-import React from "react"
-import Layout from "../../components/Layout"
-import * as styles from "../../styles/projects.module.css"
+import { graphql, Link } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import React from 'react'
+import Layout from '../../components/Layout'
+import * as styles from '../../styles/projects.module.css'
 
 export default function Projects({ data }) {
   const projects = data.projects.nodes

@@ -1,5 +1,5 @@
-import { Link, graphql, useStaticQuery } from "gatsby"
-import React from "react"
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import React from 'react'
 
 export default function Navbar() {
   // 컴포넌트에서 useStaticQuery는 한 번만 쓸 수 있다.

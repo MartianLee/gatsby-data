@@ -7,41 +7,41 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    "gatsby-transformer-remark",
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, // Needed for dynamic images
+    'gatsby-transformer-remark',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp', // Needed for dynamic images
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `notes`,
+        name: 'notes',
         path: `${__dirname}/src/notes/`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `projects`,
+        name: 'projects',
         path: `${__dirname}/src/projects/`,
       },
     },
     {
-      resolve: "gatsby-plugin-page-creator",
+      resolve: 'gatsby-plugin-page-creator',
       options: {
         path: `${__dirname}/src/projects`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images/`,
       },
     },
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        extensions: [`.mdx`, `.md`],
+        extensions: ['.mdx', '.md'],
         // gatsbyRemarkPlugins: [
         //   `gatsby-remark-prismjs`,
         //   {
@@ -55,12 +55,12 @@ module.exports = {
         // ],
       },
     },
-    `gatsby-plugin-emotion`,
+    'gatsby-plugin-emotion',
   ],
   siteMetadata: {
-    title: "SEONGHWA BLOG",
-    description: "web dev porfolio",
-    copyright: "This is copyright 2021 seonghwa",
-    contact: "me@seonghwakr.com",
+    title: 'SEONGHWA BLOG',
+    description: 'web dev porfolio',
+    copyright: 'This is copyright 2021 seonghwa',
+    contact: 'me@seonghwakr.com',
   },
 }

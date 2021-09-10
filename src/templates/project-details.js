@@ -1,10 +1,10 @@
-import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import React from "react"
-import Layout from "../components/Layout"
-import * as styles from "../styles/projects.module.css"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { MDXProvider } from "@mdx-js/react"
+import { graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import React from 'react'
+import Layout from '../components/Layout'
+import * as styles from '../styles/projects.module.css'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { MDXProvider } from '@mdx-js/react'
 
 export default function ProjectDetails({ data }) {
   console.log(data)
